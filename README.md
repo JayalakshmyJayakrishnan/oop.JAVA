@@ -1,6 +1,6 @@
 # <span style="color:#5382a1; font-family:Arial;">JJ's Java Learning Journey 🎯</span>
 
-**<span style="font-family:Georgia;">Aspiring Data Scientist | Continuous Learner</span>**
+**<span style="font-family:Times New Roman;">Aspiring Data Scientist | 💻</span>**
 
 ---
 
