@@ -35,3 +35,4 @@ Welcome to my GitHub repository! I'm currently on an exciting journey to master 
 I'm always eager to connect with fellow learners and experienced developers. Feel free to reach out if you have any tips, want to collaborate, or just chat about Java!
 
 **Email**: [lakshmystudy21@gmail.com](mailto:lakshmystudy21@gmail.com)
+**LinkedIn** : [www.linkedin.com/in/jayalakshmy-jayakrishnan-196285226]
