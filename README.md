@@ -10,7 +10,10 @@ Welcome to my GitHub repository! I'm currently on an exciting journey to master 
 ---
 
 ## <span style="color:#5382a1;">My Progress</span>
-![Progress](https://progress-bar.dev/10/)
+### Progress: 10%
+
+`[█████-----]` 10% Complete
+
 
 **Current Focus**: Object-Oriented Programming, Data Structures
 
