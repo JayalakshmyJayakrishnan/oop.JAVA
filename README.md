@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> JJ's Java Learning Journey🎯</title>
+    <meta name="description" content="Follow JJ's journey to learn Java as an aspiring data scientist!">
+    <title> JJ's Java Learning Journey&#x1F3AF;</title>
+    <link rel="icon" href="favicon.ico"> <!-- Optional favicon -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -35,11 +37,16 @@
             line-height: 20px;
             color: white;
         }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-    
         <h1>My Java Learning Journey</h1>
         <p>Aspiring Data Scientist | Continuous Learner</p>
     </header>
@@ -54,7 +61,7 @@
         <div class="progress-bar">
             <div class="progress">10%</div>
         </div>
-        <p>Current Focus: [e.g., Object-Oriented Programming, Data Structures]</p>
+        <p>Current Focus: Object-Oriented Programming</p> <!-- Updated placeholder -->
     </section>
 
     <section>
@@ -67,18 +74,6 @@
             <li>File I/O Operations</li>
         </ul>
     </section>
-
-    <section>
-        <h2>My Java Programs</h2>
-        <ul>
-            <li><a href="#">HelloWorld.java</a> - My first Java program</li>
-            <li><a href="#">SimpleCalculator.java</a> - A basic calculator application</li>
-            <li><a href="#">StudentGradeTracker.java</a> - Program to manage student grades</li>
-            
-        </ul>
-    </section>
-
-    
 
     <footer>
         <h2>Let's Connect!</h2>
