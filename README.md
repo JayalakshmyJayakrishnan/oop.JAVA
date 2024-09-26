@@ -15,7 +15,7 @@ Welcome to my GitHub repository! I'm currently on an exciting journey to master 
 `[█████-----]` 10% Complete
 
 
-**Current Focus**: Object-Oriented Programming, Data Structures
+**Current Focus**: Object-Oriented Programming
 
 ---
 
