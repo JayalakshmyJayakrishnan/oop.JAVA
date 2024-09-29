@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class SecSmall {
+class ArrSecSmall {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
