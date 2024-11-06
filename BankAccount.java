@@ -1,83 +1,88 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class BankAccount {
-    private String accountNumber;
-    private double balance;
-
+    private String AccNum;
+    private double bal;
     
-    public BankAccount(String accountNumber, double initialBalance) {
-        this.accountNumber = accountNumber;
-        this.balance = initialBalance;
+    public BankAccount(String AccNum, double bal) {
+        this.AccNum = AccNum;
+        this.bal = bal;
     }
-
     
-    public void deposit(double amount) {
-        if (amount > 0) {
-            balance += amount;
-            System.out.println("Successfully deposited: $" + amount);
-        } else {
-            System.out.println("Invalid deposit amount!");
+    public void deposit(double amt) {
+        if(amt > 0) {
+            bal = amt + bal;
+            System.out.println("Amount deposited : $" +amt + "successfully!" );
+        }
+        else{
+            System.out.println("Invalid request!");
+            
         }
     }
-
     
-    public void withdraw(double amount) {
-        if (amount > 0 && balance >= amount) {
-            balance -= amount;
-            System.out.println("Successfully withdrawn: $" + amount);
-        } else if (amount > balance) {
-            System.out.println("Insufficient balance for the withdrawal!");
-        } else {
-            System.out.println("Invalid withdrawal amount!");
+    public void withdraw(double amt) {
+        if( amt > 0 && bal >= amt) {
+            bal -= amt;
+            System.out.println("Amount withdrawn: $" +amt + "successfully");
         }
-    }
-
+        else if( amt > bal) {
+            System.out.println( "Insufficient balance");
+        }
+        else {
+            System.out.println("Invalid Request!");
+            
+        }
+        }
+        
+        public double getBal() {
+            return bal;
+        }
+        
+        
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+            
+            
+            System.out.println("Enter account number: ");
+            String AccNum = sc.nextLine();
+            
+            System.out.println("Enter initial balance: ");
+            double bal = sc.nextDouble();
     
-    public double getBalance() {
-        return balance;
-    }
-
-    
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        
-        System.out.print("Enter your account number: ");
-        String accountNumber = scanner.nextLine();
-        System.out.print("Enter your initial balance: ");
-        double initialBalance = scanner.nextDouble();
-
-        BankAccount account = new BankAccount(accountNumber, initialBalance);
-
-        
-        System.out.println("Account created successfully. Current balance: $" + account.getBalance());
-
-        
-        while (true) {
-            System.out.println("\nChoose an action: \n1. Deposit\n2. Withdraw\n3. Check Balance\n4. Exit");
-            int choice = scanner.nextInt();
-
-            switch (choice) {
-                case 1:
-                    System.out.print("Enter deposit amount: ");
-                    double depositAmount = scanner.nextDouble();
-                    account.deposit(depositAmount);
-                    break;
-                case 2:
-                    System.out.print("Enter withdrawal amount: ");
-                    double withdrawAmount = scanner.nextDouble();
-                    account.withdraw(withdrawAmount);
-                    break;
-                case 3:
-                    System.out.println("Current balance: $" + account.getBalance());
-                    break;
-                case 4:
-                    System.out.println("Thank you for banking with us!");
-                    scanner.close();
-                    return;
-                default:
-                    System.out.println("Invalid choice! Please choose again.");
+            BankAccount bankacc = new BankAccount(AccNum, bal);
+            
+            while(true){
+                System.out.println("Enter a request:\n 1.Deposit\n 2.Withdraw\n 3.Balance\n 4.Exit\n");
+                int choice = sc.nextInt();
+                
+                switch(choice){
+                    case 1: 
+                        System.out.println("Enter the amount to be deposited: ");
+                        double depositamt = sc.nextDouble();
+                        bankacc.deposit(depositamt);
+                        break;
+                        
+                    case 2:
+                        System.out.println("Enter the amount to be withdrawn: ");
+                        double withdrawamt = sc.nextDouble();
+                        bankacc.withdraw(withdrawamt);
+                        break;
+                        
+                    case 3:
+                        System.out.println("Current balance:$ " + bankacc.getBal());
+                        break;
+                        
+                    case 4:
+                            System.out.println("Thank you for banking with us!");
+                            return;
+                            
+                    default:
+                            System.out.println("Invalid request!");
+                            
+                }
+                
             }
         }
-    }
 }
+        
+    
