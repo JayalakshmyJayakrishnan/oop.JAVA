@@ -33,6 +33,12 @@ public class MultiThreadingthing2 {
 }
 
 /*
+Here, we've used the implements keyword.
+One of the differences from the first example is that we've used 
+MyThreadinghing mythread1 = new MultiThreadingthing(i);
+Thread thread = new Thread(mythread1);
+thread.start();
+
 OUTPUT
 1 FROM THREAD 1
 1 FROM THREAD 4
