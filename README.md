@@ -10,9 +10,9 @@ Welcome to my GitHub repository! I'm currently on an exciting journey to master 
 ---
 
 ## <span style="color:#5382a1;">My Progress</span>
-### Progress: 10%
+### Progress: 60%
 
-`[█████-----]` 10% Complete
+`[████████----]` 60% Complete
 
 
 **Current Focus**: Object-Oriented Programming
