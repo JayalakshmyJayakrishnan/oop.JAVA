@@ -19,18 +19,18 @@ class Employee {
 
     public void readEmployeeDetails(Scanner scanner) {
         System.out.print("Enter employee name: ");
-        empName = scanner.nextLine();
+        empName = sc.nextLine();
         System.out.print("Enter employee age: ");
-        empAge = scanner.nextInt();
-        scanner.nextLine(); // Consume newline character
+        empAge = sc.nextInt();
+        scanner.nextLine(); 
         System.out.print("Enter employee address: ");
-        empAddress = scanner.nextLine();
+        empAddress = sc.nextLine();
         System.out.print("Enter employee phone: ");
-        empPhone = scanner.nextLine();
+        empPhone = sc.nextLine();
         System.out.print("Enter employee designation: ");
-        empDesignation = scanner.nextLine();
+        empDesignation = sc.nextLine();
         System.out.print("Enter employee department: ");
-        department = scanner.nextLine();
+        department = sc.nextLine();
     }
 
     public void writeToFile() {
@@ -48,7 +48,7 @@ class Employee {
 
 public class EmployeeManagement {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         Employee employee = new Employee();
 
         try {
