@@ -1,6 +1,6 @@
 # <span style="color:#5382a1; font-family:Arial;">JJ's Java Learning Journey 🎯</span>
 
-**<span style="font-family:Times New Roman;">Aspiring Data Scientist | 💻</span>**
+
 
 ---
 
@@ -8,11 +8,6 @@
 Welcome to my GitHub repository! I'm currently on an exciting journey to master Java programming. This space serves as a chronicle of my progress, showcasing the programs I create as I learn and grow in my coding skills.
 
 ---
-
-## <span style="color:#5382a1;">My Progress</span>
-### Progress: 60%
-
-`[████████----]` 60% Complete
 
 
 **Current Focus**: Object-Oriented Programming
